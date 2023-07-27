@@ -12,6 +12,8 @@
 		832098282A70B65C0001718C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 832098272A70B65C0001718C /* Experience.rcproject */; };
 		8320982A2A70B65E0001718C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832098292A70B65E0001718C /* Assets.xcassets */; };
 		8320982D2A70B65E0001718C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8320982C2A70B65E0001718C /* Preview Assets.xcassets */; };
+		83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E172A71C29300A90276 /* SwiftUIView.swift */; };
+		83400E1D2A724FE400A90276 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E1C2A724FE400A90276 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		832098272A70B65C0001718C /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		832098292A70B65E0001718C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8320982C2A70B65E0001718C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83400E172A71C29300A90276 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		83400E192A71C36B00A90276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83400E1C2A724FE400A90276 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 		832098172A70B65C0001718C = {
 			isa = PBXGroup;
 			children = (
+				83400E172A71C29300A90276 /* SwiftUIView.swift */,
 				832098222A70B65C0001718C /* MyVirtualCat */,
 				832098212A70B65C0001718C /* Products */,
 			);
@@ -53,8 +59,10 @@
 		832098222A70B65C0001718C /* MyVirtualCat */ = {
 			isa = PBXGroup;
 			children = (
+				83400E192A71C36B00A90276 /* Info.plist */,
 				832098232A70B65C0001718C /* AppDelegate.swift */,
 				832098252A70B65C0001718C /* ContentView.swift */,
+				83400E1C2A724FE400A90276 /* Coordinator.swift */,
 				832098272A70B65C0001718C /* Experience.rcproject */,
 				832098292A70B65E0001718C /* Assets.xcassets */,
 				8320982B2A70B65E0001718C /* Preview Content */,
@@ -142,7 +150,9 @@
 			files = (
 				832098262A70B65C0001718C /* ContentView.swift in Sources */,
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
+				83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */,
 				832098282A70B65C0001718C /* Experience.rcproject in Sources */,
+				83400E1D2A724FE400A90276 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +284,8 @@
 				DEVELOPMENT_TEAM = X23L23XUSP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = MyVirtualCat/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow Your Cat Come to You 💕";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -305,7 +316,8 @@
 				DEVELOPMENT_TEAM = X23L23XUSP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = MyVirtualCat/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow Your Cat Come to You 💕";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;

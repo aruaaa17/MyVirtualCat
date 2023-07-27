@@ -1,3 +1,12 @@
 [
-
+  {
+    "libraryIdentifier" : "5c075d60b6fa8176e5d1a6eedf606b38",
+    "format" : "model",
+    "displayName" : "Munchkin_Cat_RealityKit.usdz"
+  },
+  {
+    "libraryIdentifier" : "778142a96e0d72f8452638e45bfb6ef7",
+    "format" : "model",
+    "displayName" : "Tuxedo_Cat_Animated_2.usdz"
+  }
 ]
