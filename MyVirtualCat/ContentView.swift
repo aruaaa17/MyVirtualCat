@@ -21,17 +21,16 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
         
-        arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
-                
-        context.coordinator.view = arView
-        arView.session.delegate = context.coordinator
+        // Load the "Cat" scene from the "Experience" Reality file
+        let catAnchor = try! Experience.loadCat()
+        
+        // Add the cat anchor to the scene
+        arView.scene.anchors.append(catAnchor)
+        
+        
         
         return arView
         
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator()
     }
     
     

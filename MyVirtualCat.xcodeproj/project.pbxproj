@@ -13,7 +13,6 @@
 		8320982A2A70B65E0001718C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832098292A70B65E0001718C /* Assets.xcassets */; };
 		8320982D2A70B65E0001718C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8320982C2A70B65E0001718C /* Preview Assets.xcassets */; };
 		83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E172A71C29300A90276 /* SwiftUIView.swift */; };
-		83400E1D2A724FE400A90276 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E1C2A724FE400A90276 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		8320982C2A70B65E0001718C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83400E172A71C29300A90276 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		83400E192A71C36B00A90276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		83400E1C2A724FE400A90276 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				83400E192A71C36B00A90276 /* Info.plist */,
 				832098232A70B65C0001718C /* AppDelegate.swift */,
 				832098252A70B65C0001718C /* ContentView.swift */,
-				83400E1C2A724FE400A90276 /* Coordinator.swift */,
 				832098272A70B65C0001718C /* Experience.rcproject */,
 				832098292A70B65E0001718C /* Assets.xcassets */,
 				8320982B2A70B65E0001718C /* Preview Content */,
@@ -152,7 +149,6 @@
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
 				83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */,
 				832098282A70B65C0001718C /* Experience.rcproject in Sources */,
-				83400E1D2A724FE400A90276 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
