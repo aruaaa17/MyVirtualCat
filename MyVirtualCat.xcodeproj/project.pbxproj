@@ -13,6 +13,8 @@
 		8320982A2A70B65E0001718C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832098292A70B65E0001718C /* Assets.xcassets */; };
 		8320982D2A70B65E0001718C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8320982C2A70B65E0001718C /* Preview Assets.xcassets */; };
 		83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E172A71C29300A90276 /* SwiftUIView.swift */; };
+		83400E2B2A7380D000A90276 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E2A2A7380D000A90276 /* Coordinator.swift */; };
+		83400E2D2A73811900A90276 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E2C2A73811900A90276 /* ARView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8320982C2A70B65E0001718C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83400E172A71C29300A90276 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		83400E192A71C36B00A90276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83400E2A2A7380D000A90276 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		83400E2C2A73811900A90276 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				8320982C2A70B65E0001718C /* Preview Assets.xcassets */,
+				83400E2A2A7380D000A90276 /* Coordinator.swift */,
+				83400E2C2A73811900A90276 /* ARView+Extensions.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			files = (
 				832098262A70B65C0001718C /* ContentView.swift in Sources */,
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
+				83400E2B2A7380D000A90276 /* Coordinator.swift in Sources */,
+				83400E2D2A73811900A90276 /* ARView+Extensions.swift in Sources */,
 				83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */,
 				832098282A70B65C0001718C /* Experience.rcproject in Sources */,
 			);
