@@ -80,12 +80,96 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-
+                                    "A1F0D46F-F25D-4150-A9CB-43BC991B7A79"
                                   ]
                                 },
                                 "name" : "tapTarget"
                               },
                               "identifier" : "2AE678D4-9BBD-48E0-8726-178E1716CF59",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationSpeed" : 1,
+                                          "audioGain" : 1,
+                                          "clipDuration" : 0,
+                                          "clipStart" : 0,
+                                          "iterations" : 1,
+                                          "multiplePerformType" : "ignore request",
+                                          "muteAudio" : false,
+                                          "reversed" : false,
+                                          "reverses" : false,
+                                          "target" : [
+                                            "A1F0D46F-F25D-4150-A9CB-43BC991B7A79"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "startAnimate"
+                                        }
+                                      },
+                                      "identifier" : "D4426208-A66E-4EE6-AFF6-951CD78A1D6E",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "29C8BB9F-D314-4D02-B692-85FD3523F172",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.21568627655506134,
+                        0.72549021244049072,
+                        0.80000001192092896,
+                        1
+                      ],
+                      "identifier" : "0825329A-DFA0-4F2B-A20E-3FF797F35C16",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Tap Cat",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "797152B0-087D-4476-BA04-7547C5C653EA",
                               "isEnabled" : true
                             }
                           ],
@@ -1245,17 +1329,17 @@
                           },
                           "transform" : {
                             "matrix" : [
-                              0.0099999997764825821,
+                              0.0057144695892930031,
                               0,
                               0,
                               0,
                               0,
-                              0.0099999997764825821,
+                              0.0057144695892930031,
                               0,
                               0,
                               0,
                               0,
-                              0.0099999997764825821,
+                              0.0057144695892930031,
                               0,
                               0,
                               0,
@@ -1324,21 +1408,21 @@
               "title" : "Cat",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.96429455280303955,
-                  2.6077030312876559e-08,
-                  -0.26483181118965149,
+                  0.95314490795135498,
+                  2.6077033865590238e-08,
+                  -0.30251395702362061,
                   0,
-                  -0.10182496160268784,
-                  0.92312949895858765,
-                  -0.37076058983802795,
+                  -0.056912973523139954,
+                  0.98214346170425415,
+                  -0.17931820452213287,
                   0,
-                  0.24447409808635712,
-                  0.38448894023895264,
-                  0.89016884565353394,
+                  0.2971121072769165,
+                  0.18813316524028778,
+                  0.93612509965896606,
                   0,
-                  0.5932270884513855,
-                  1.0693893432617188,
-                  1.5307939052581787,
+                  1.0522140264511108,
+                  0.58950626850128174,
+                  2.970217227935791,
                   1
                 ],
                 "sceneTransform" : [

@@ -8,11 +8,52 @@
 import ARKit
 import SwiftUI
 import RealityKit
+import AVFoundation
 
+// view protocol
 struct ContentView : View {
     var body: some View {
         ARViewContainer().edgesIgnoringSafeArea(.all)
     }
+}
+
+// Add light to cat model
+class Coordinator {
+    
+    var arView: ARView?
+    var isCatLoaded = false
+    
+    @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
+        
+        guard let arView = arView, !isCatLoaded else {
+            return
+        }
+
+        let location = recognizer.location(in: arView)
+        let results = arView.raycast(from: location, allowing: .estimatedPlane, alignment: .horizontal)
+        
+        if let result = results.first {
+           
+            let anchor = AnchorEntity(raycastResult: result)
+            
+            let catEntity = try! Experience.loadCat()
+                        anchor.addChild(catEntity)
+            
+            let lightEntity = PointLight()
+            lightEntity.light.color = .orange
+            lightEntity.light.intensity = 1000
+            lightEntity.light.attenuationRadius = 0.5
+
+            lightEntity.look(at: [0.05, 0.05, 0.05], from: [0.1, 0.1, 0.1], relativeTo: anchor)
+            
+            anchor.addChild(lightEntity)
+            arView.scene.addAnchor(anchor)
+            
+            isCatLoaded = true
+           
+        }
+    }
+    
 }
 
 struct ARViewContainer: UIViewRepresentable {
@@ -20,21 +61,20 @@ struct ARViewContainer: UIViewRepresentable {
     // Set up basic ARView
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-        
-        // Load the "Cat" scene from the "Experience" Reality file
-        let catAnchor = try! Experience.loadCat()
-        
-        // Add the cat anchor to the scene
-        arView.scene.anchors.append(catAnchor)
-        
-        
-        
+        arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
+        // Load the "Cat" scene from the "Experience" Reality File
+//        arView.scene.addAnchor(try! Experience.loadCat())
+        context.coordinator.arView = arView
+
         return arView
         
     }
     
-    
     func updateUIView(_ uiView: ARView, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
 }
 
 #if DEBUG
