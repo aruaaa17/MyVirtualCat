@@ -25,6 +25,12 @@ struct ARViewContainer: UIViewRepresentable {
     // Set up basic ARView
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
+        // Add ARWorld config
+        let session = arView.session
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = .horizontal
+        session.run(config)
+        
         arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
         // Load the "Cat" scene from the "Experience" Reality File
 //        arView.scene.addAnchor(try! Experience.loadCat())
