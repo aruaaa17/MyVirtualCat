@@ -50,9 +50,9 @@ class Coordinator {
             lightEntity.light.intensity = 1000
             lightEntity.light.attenuationRadius = 0.5
 
-            lightEntity.look(at: [0.05, 0.05, 0.05], from: [0.1, 0.1, 0.1], relativeTo: anchor)
+            lightEntity.look(at: [0.05, 0.05, 0.05], from: [0.1, 0.1, 0.1], relativeTo: catEntity)
             
-            anchor.addChild(lightEntity)
+            catEntity.addChild(lightEntity)
             arView.scene.addAnchor(anchor)
             
             // Save new cat model
