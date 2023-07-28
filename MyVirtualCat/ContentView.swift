@@ -17,7 +17,7 @@ struct ContentView : View {
     }
 }
 
-// Add light to cat model
+
 class Coordinator {
     
     var arView: ARView?
@@ -44,7 +44,7 @@ class Coordinator {
             
             let catEntity = try! Experience.loadCat()
                         anchor.addChild(catEntity)
-            
+            // Add light to cat model
             let lightEntity = PointLight()
             lightEntity.light.color = .orange
             lightEntity.light.intensity = 1000
