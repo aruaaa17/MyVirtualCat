@@ -21,11 +21,11 @@ struct ContentView : View {
 class Coordinator {
     
     var arView: ARView?
-    var isCatLoaded = false
+    var catAnchor: AnchorEntity?
     
     @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
         
-        guard let arView = arView, !isCatLoaded else {
+        guard let arView = arView else {
             return
         }
 
@@ -33,6 +33,12 @@ class Coordinator {
         let results = arView.raycast(from: location, allowing: .estimatedPlane, alignment: .horizontal)
         
         if let result = results.first {
+            
+            // Remove old cat model
+            if let catAnchor = catAnchor {
+                arView.scene.removeAnchor(catAnchor)
+            }
+            
            
             let anchor = AnchorEntity(raycastResult: result)
             
@@ -49,7 +55,8 @@ class Coordinator {
             anchor.addChild(lightEntity)
             arView.scene.addAnchor(anchor)
             
-            isCatLoaded = true
+            // Save new cat model
+            catAnchor = anchor
            
         }
     }
