@@ -8,5 +8,15 @@
     "libraryIdentifier" : "778142a96e0d72f8452638e45bfb6ef7",
     "format" : "model",
     "displayName" : "Tuxedo_Cat_Animated_2.usdz"
+  },
+  {
+    "libraryIdentifier" : "179e954e61848b4ac4abf886320147dc",
+    "format" : "model",
+    "displayName" : "Fish.usdz"
+  },
+  {
+    "libraryIdentifier" : "7204b4739c71390d64f4f579bb87c75c",
+    "format" : "model",
+    "displayName" : "Heart_Emoji.usdz"
   }
 ]

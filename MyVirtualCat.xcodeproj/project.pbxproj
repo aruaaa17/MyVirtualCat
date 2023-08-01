@@ -15,6 +15,7 @@
 		83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E172A71C29300A90276 /* SwiftUIView.swift */; };
 		83400E2B2A7380D000A90276 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E2A2A7380D000A90276 /* Coordinator.swift */; };
 		83400E2D2A73811900A90276 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E2C2A73811900A90276 /* ARView+Extensions.swift */; };
+		835B2C182A79CA5C006EC2E3 /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835B2C172A79CA5C006EC2E3 /* IconViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		83400E192A71C36B00A90276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83400E2A2A7380D000A90276 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		83400E2C2A73811900A90276 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
+		835B2C172A79CA5C006EC2E3 /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				8320982C2A70B65E0001718C /* Preview Assets.xcassets */,
 				83400E2A2A7380D000A90276 /* Coordinator.swift */,
+				835B2C172A79CA5C006EC2E3 /* IconViewModel.swift */,
 				83400E2C2A73811900A90276 /* ARView+Extensions.swift */,
 			);
 			path = "Preview Content";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835B2C182A79CA5C006EC2E3 /* IconViewModel.swift in Sources */,
 				832098262A70B65C0001718C /* ContentView.swift in Sources */,
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
 				83400E2B2A7380D000A90276 /* Coordinator.swift in Sources */,
