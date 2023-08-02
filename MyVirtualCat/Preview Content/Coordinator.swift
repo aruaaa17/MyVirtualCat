@@ -14,11 +14,11 @@ class Coordinator {
     var arView: ARView?
     var catAnchor: AnchorEntity?
     var vm: IconViewModel
-    var carScene: Experience.Cat
+    var catScene: Experience.Cat
     
     init(vm: IconViewModel) {
         self.vm = vm
-        self.carScene = try! Experience.loadCat()
+        self.catScene = try! Experience.loadCat()
         
     }
     
@@ -40,7 +40,7 @@ class Coordinator {
             
            
             let anchor = AnchorEntity(raycastResult: result)
-            guard let entity = carScene.findEntity(named: vm.selectedIcon) else {
+            guard let entity = catScene.findEntity(named: vm.selectedIcon) else {
                 return
             }
             entity.position = SIMD3(0,0,0)
