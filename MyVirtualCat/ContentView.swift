@@ -19,7 +19,7 @@ struct ContentView : View {
         VStack {
             ARViewContainer(vm: vm).edgesIgnoringSafeArea(.all)
             ScrollView(.horizontal) {
-                HStack {
+                HStack(spacing: 25) {
                     ForEach(icons, id: \.self) { name in
                         Image(name)
                             .resizable()
@@ -28,6 +28,7 @@ struct ContentView : View {
                             .onTapGesture {
                                 vm.selectedIcon = name
                             }
+                        Spacer()
                     }
                 }
             }
