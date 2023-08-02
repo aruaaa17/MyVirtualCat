@@ -211,7 +211,7 @@
                                           "moveEase" : "easeInOut",
                                           "respectPhysics" : false,
                                           "target" : [
-                                            "D4C849CB-FDDA-4AE5-82B9-549D62CE4DA5"
+
                                           ]
                                         },
                                         "name" : {
@@ -295,7 +295,7 @@
                                           "moveEase" : "easeInOut",
                                           "respectPhysics" : false,
                                           "target" : [
-                                            "A18F081D-FA5F-4DE4-976E-FB042BA0865F"
+
                                           ]
                                         },
                                         "name" : {
@@ -379,7 +379,7 @@
                                           "moveEase" : "easeInOut",
                                           "respectPhysics" : false,
                                           "target" : [
-                                            "5D961FEC-49F9-42C9-8BEB-5396F591CF85"
+
                                           ]
                                         },
                                         "name" : {
@@ -491,7 +491,7 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "5D961FEC-49F9-42C9-8BEB-5396F591CF85"
+
                                   ]
                                 },
                                 "name" : "tapTarget"
@@ -1743,406 +1743,12 @@
                   "4F7DE7A9-FFC8-407E-B3F1-F28D632416BA" : null,
                   "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
                   "8EDEBC54-8C7A-41A7-976E-AE1D4A72FD33" : null,
-                  "49ADD1C4-CDC5-4E1B-B72B-1E08E34A8C4E" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:179e954e61848b4ac4abf886320147dc\/Fish.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : true
-                                }
-                              ]
-                            ],
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "7F92773B-E443-42EB-948B-449220A20B00"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "5D961FEC-49F9-42C9-8BEB-5396F591CF85"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "fish"
-                          }
-                        ],
-                        [
-                          "rigidBody-enabled",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ],
-                        [
-                          "rigidBody-material",
-                          {
-                            "typeName" : "RigidBodyMaterial",
-                            "value" : {
-                              "builtIn" : "rubber",
-                              "overrides" : {
-
-                              }
-                            }
-                          }
-                        ],
-                        [
-                          "rigidBody-motionType",
-                          {
-                            "typeName" : "REMotionType",
-                            "value" : "dynamic"
-                          }
-                        ],
-                        [
-                          "rigidBody-shapeType",
-                          {
-                            "typeName" : "String",
-                            "value" : "capsule"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.028506070375442505,
-                        0.040710859000682831,
-                        0.018088879063725471,
-                        0,
-                        -0.019899887964129448,
-                        0.030850201845169067,
-                        -0.03807150200009346,
-                        0,
-                        -0.039856936782598495,
-                        0.013713827356696129,
-                        0.031945757567882538,
-                        0,
-                        -0.18730762600898743,
-                        0.021060632541775703,
-                        0.40830731391906738,
-                        1
-                      ]
-                    }
-                  },
+                  "49ADD1C4-CDC5-4E1B-B72B-1E08E34A8C4E" : null,
                   "455D13DC-827F-4C16-BB5F-CA501B60B801" : null,
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
-                  "B6F4D954-5A5C-42EC-A910-52352E41943B" : {
-                    "overrides" : {
-                      "arguments" : [
-                        [
-                          "diameter",
-                          {
-                            "typeName" : "Double",
-                            "value" : 0.10000000000000001
-                          }
-                        ],
-                        [
-                          "material",
-                          {
-                            "typeName" : "String",
-                            "value" : "clearCoatPaint"
-                          }
-                        ],
-                        [
-                          "materialColor",
-                          {
-                            "typeName" : "double4",
-                            "value" : [
-                              0.50999999046325684,
-                              0.85000002384185791,
-                              0.17000000178813934,
-                              1
-                            ]
-                          }
-                        ],
-                        [
-                          "type",
-                          {
-                            "typeName" : "String",
-                            "value" : "sphere"
-                          }
-                        ]
-                      ],
-                      "factory" : {
-                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
-                        "version" : "1.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "A18F081D-FA5F-4DE4-976E-FB042BA0865F"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "ball"
-                          }
-                        ],
-                        [
-                          "rigidBody-enabled",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ],
-                        [
-                          "rigidBody-material",
-                          {
-                            "typeName" : "RigidBodyMaterial",
-                            "value" : {
-                              "builtIn" : "plastic",
-                              "overrides" : {
-
-                              }
-                            }
-                          }
-                        ],
-                        [
-                          "rigidBody-motionType",
-                          {
-                            "typeName" : "REMotionType",
-                            "value" : "dynamic"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.68244975805282593,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.68244975805282593,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.68244975805282593,
-                        0,
-                        0.29991495609283447,
-                        0.034931425005197525,
-                        0,
-                        1
-                      ]
-                    }
-                  },
+                  "B6F4D954-5A5C-42EC-A910-52352E41943B" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
-                  "B74251E5-FA5A-4A55-990E-6E3F20AED9D6" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:7204b4739c71390d64f4f579bb87c75c\/Heart_Emoji.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : true
-                                }
-                              ]
-                            ],
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "EB8DC1E5-61FA-43AF-AD46-FD0D3D7C65B2"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0099999997764825821,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "D4C849CB-FDDA-4AE5-82B9-549D62CE4DA5"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "heart"
-                          }
-                        ],
-                        [
-                          "rigidBody-enabled",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ],
-                        [
-                          "rigidBody-material",
-                          {
-                            "typeName" : "RigidBodyMaterial",
-                            "value" : {
-                              "builtIn" : "plastic",
-                              "overrides" : {
-
-                              }
-                            }
-                          }
-                        ],
-                        [
-                          "rigidBody-motionType",
-                          {
-                            "typeName" : "REMotionType",
-                            "value" : "dynamic"
-                          }
-                        ],
-                        [
-                          "rigidBody-shapeType",
-                          {
-                            "typeName" : "String",
-                            "value" : "capsule"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        -0.12285502254962921,
-                        0,
-                        -1.0740286882082728e-08,
-                        0,
-                        0,
-                        0.12285502254962921,
-                        0,
-                        0,
-                        1.0740286882082728e-08,
-                        0,
-                        -0.12285502254962921,
-                        0,
-                        0.28755846619606018,
-                        0.11387189477682114,
-                        -0.54365450143814087,
-                        1
-                      ]
-                    }
-                  },
+                  "B74251E5-FA5A-4A55-990E-6E3F20AED9D6" : null,
                   "DB44278C-C881-4EB2-B0E1-F5299D8B4034" : null
                 },
                 "factory" : null,
@@ -2160,21 +1766,21 @@
               "title" : "Cat",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99169492721557617,
-                  6.5192580223083496e-08,
-                  0.12861229479312897,
+                  0.98782390356063843,
+                  6.7055225372314453e-08,
+                  -0.15557608008384705,
                   0,
-                  0.045117128640413284,
-                  0.93645024299621582,
-                  -0.34788691997528076,
+                  -0.091569229960441589,
+                  0.80843812227249146,
+                  -0.58141440153121948,
                   0,
-                  -0.12043901532888412,
-                  0.35080021619796753,
-                  0.92867302894592285,
+                  0.12577365338802338,
+                  0.58858102560043335,
+                  0.79859459400177002,
                   0,
-                  -0.19583688676357269,
-                  0.44457283616065979,
-                  1.5142104625701904,
+                  0.26973637938499451,
+                  0.89174008369445801,
+                  1.456729531288147,
                   1
                 ],
                 "sceneTransform" : [
@@ -2746,1228 +2352,7 @@
                       ]
                     }
                   },
-                  "E27E2A2D-2A9C-44D2-8F24-4ED193B21EA9" : {
-                    "overrides" : {
-                      "children" : {
-                        "USDScene" : {
-                          "overrides" : {
-                            "arguments" : [
-                              [
-                                "includeSceneScaling",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ],
-                              [
-                                "subpath",
-                                {
-                                  "typeName" : "String",
-                                  "value" : ""
-                                }
-                              ],
-                              [
-                                "url",
-                                {
-                                  "typeName" : "String",
-                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                }
-                              ],
-                              [
-                                "withDescendants",
-                                {
-                                  "typeName" : "Bool",
-                                  "value" : false
-                                }
-                              ]
-                            ],
-                            "children" : {
-                              "scene" : {
-                                "overrides" : {
-                                  "arguments" : [
-                                    [
-                                      "includeSceneScaling",
-                                      {
-                                        "typeName" : "Bool",
-                                        "value" : false
-                                      }
-                                    ],
-                                    [
-                                      "subpath",
-                                      {
-                                        "typeName" : "String",
-                                        "value" : "scene"
-                                      }
-                                    ],
-                                    [
-                                      "url",
-                                      {
-                                        "typeName" : "String",
-                                        "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                      }
-                                    ],
-                                    [
-                                      "withDescendants",
-                                      {
-                                        "typeName" : "Bool",
-                                        "value" : false
-                                      }
-                                    ]
-                                  ],
-                                  "children" : {
-                                    "SkinnedMeshes" : {
-                                      "overrides" : {
-                                        "arguments" : [
-                                          [
-                                            "includeSceneScaling",
-                                            {
-                                              "typeName" : "Bool",
-                                              "value" : false
-                                            }
-                                          ],
-                                          [
-                                            "subpath",
-                                            {
-                                              "typeName" : "String",
-                                              "value" : "scene\/SkinnedMeshes"
-                                            }
-                                          ],
-                                          [
-                                            "url",
-                                            {
-                                              "typeName" : "String",
-                                              "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                            }
-                                          ],
-                                          [
-                                            "withDescendants",
-                                            {
-                                              "typeName" : "Bool",
-                                              "value" : false
-                                            }
-                                          ]
-                                        ],
-                                        "children" : {
-                                          "Sketchfab_model" : {
-                                            "overrides" : {
-                                              "arguments" : [
-                                                [
-                                                  "includeSceneScaling",
-                                                  {
-                                                    "typeName" : "Bool",
-                                                    "value" : false
-                                                  }
-                                                ],
-                                                [
-                                                  "subpath",
-                                                  {
-                                                    "typeName" : "String",
-                                                    "value" : "scene\/SkinnedMeshes\/Sketchfab_model"
-                                                  }
-                                                ],
-                                                [
-                                                  "url",
-                                                  {
-                                                    "typeName" : "String",
-                                                    "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                  }
-                                                ],
-                                                [
-                                                  "withDescendants",
-                                                  {
-                                                    "typeName" : "Bool",
-                                                    "value" : false
-                                                  }
-                                                ]
-                                              ],
-                                              "children" : {
-                                                "Root" : {
-                                                  "overrides" : {
-                                                    "arguments" : [
-                                                      [
-                                                        "includeSceneScaling",
-                                                        {
-                                                          "typeName" : "Bool",
-                                                          "value" : false
-                                                        }
-                                                      ],
-                                                      [
-                                                        "subpath",
-                                                        {
-                                                          "typeName" : "String",
-                                                          "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root"
-                                                        }
-                                                      ],
-                                                      [
-                                                        "url",
-                                                        {
-                                                          "typeName" : "String",
-                                                          "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                        }
-                                                      ],
-                                                      [
-                                                        "withDescendants",
-                                                        {
-                                                          "typeName" : "Bool",
-                                                          "value" : false
-                                                        }
-                                                      ]
-                                                    ],
-                                                    "children" : {
-                                                      "metarig_004" : {
-                                                        "overrides" : {
-                                                          "arguments" : [
-                                                            [
-                                                              "includeSceneScaling",
-                                                              {
-                                                                "typeName" : "Bool",
-                                                                "value" : false
-                                                              }
-                                                            ],
-                                                            [
-                                                              "subpath",
-                                                              {
-                                                                "typeName" : "String",
-                                                                "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004"
-                                                              }
-                                                            ],
-                                                            [
-                                                              "url",
-                                                              {
-                                                                "typeName" : "String",
-                                                                "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                              }
-                                                            ],
-                                                            [
-                                                              "withDescendants",
-                                                              {
-                                                                "typeName" : "Bool",
-                                                                "value" : false
-                                                              }
-                                                            ]
-                                                          ],
-                                                          "children" : {
-                                                            "metarig_004_rootJoint" : {
-                                                              "overrides" : {
-                                                                "arguments" : [
-                                                                  [
-                                                                    "includeSceneScaling",
-                                                                    {
-                                                                      "typeName" : "Bool",
-                                                                      "value" : false
-                                                                    }
-                                                                  ],
-                                                                  [
-                                                                    "subpath",
-                                                                    {
-                                                                      "typeName" : "String",
-                                                                      "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint"
-                                                                    }
-                                                                  ],
-                                                                  [
-                                                                    "url",
-                                                                    {
-                                                                      "typeName" : "String",
-                                                                      "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                    }
-                                                                  ],
-                                                                  [
-                                                                    "withDescendants",
-                                                                    {
-                                                                      "typeName" : "Bool",
-                                                                      "value" : false
-                                                                    }
-                                                                  ]
-                                                                ],
-                                                                "children" : {
-                                                                  "skin0" : {
-                                                                    "overrides" : {
-                                                                      "arguments" : [
-                                                                        [
-                                                                          "includeSceneScaling",
-                                                                          {
-                                                                            "typeName" : "Bool",
-                                                                            "value" : false
-                                                                          }
-                                                                        ],
-                                                                        [
-                                                                          "subpath",
-                                                                          {
-                                                                            "typeName" : "String",
-                                                                            "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0"
-                                                                          }
-                                                                        ],
-                                                                        [
-                                                                          "url",
-                                                                          {
-                                                                            "typeName" : "String",
-                                                                            "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                          }
-                                                                        ],
-                                                                        [
-                                                                          "withDescendants",
-                                                                          {
-                                                                            "typeName" : "Bool",
-                                                                            "value" : false
-                                                                          }
-                                                                        ]
-                                                                      ],
-                                                                      "children" : {
-                                                                        "Cat" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Cat"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "13657750-A34E-4A8A-8D69-180DED7DFA19"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "Cat_1" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Cat_1"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "8255B25D-0825-4DE3-A162-BB1D18671A99"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "Cat_2" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Cat_2"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "995AF5E7-73A1-4391-AC2A-B5924BBC655E"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "Cat_3" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Cat_3"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "881BA915-FF0F-436A-8C45-D8870C07AF94"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "EyeRims" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/EyeRims"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "7BF246B5-B17D-48E2-BCC2-B6108B4BFDA1"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "Eyes" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Eyes"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "A7A5B32C-A35A-4314-BBE9-8AA245FE12D4"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "Eyes_1" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Eyes_1"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "991B19C6-9CD9-4D2C-9AF0-86FE9B1B9935"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "Eyes_2" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/Eyes_2"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "15523843-6E2D-4C26-8A9C-C3C47BCE45C3"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        },
-                                                                        "skeleton" : {
-                                                                          "overrides" : {
-                                                                            "arguments" : [
-                                                                              [
-                                                                                "includeSceneScaling",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : false
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "subpath",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "scene\/SkinnedMeshes\/Sketchfab_model\/Root\/metarig_004\/metarig_004_rootJoint\/skin0\/skeleton"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "url",
-                                                                                {
-                                                                                  "typeName" : "String",
-                                                                                  "value" : "model:778142a96e0d72f8452638e45bfb6ef7\/Tuxedo_Cat_Animated_2.usdz"
-                                                                                }
-                                                                              ],
-                                                                              [
-                                                                                "withDescendants",
-                                                                                {
-                                                                                  "typeName" : "Bool",
-                                                                                  "value" : true
-                                                                                }
-                                                                              ]
-                                                                            ],
-                                                                            "factory" : {
-                                                                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                              "version" : "0.0"
-                                                                            },
-                                                                            "runtimeAttributes" : [
-                                                                              [
-                                                                                "RuntimeIdentifier",
-                                                                                {
-                                                                                  "typeName" : "UUID",
-                                                                                  "value" : "7E1ACBA9-872B-4016-A437-C3EB4C2C1CB8"
-                                                                                }
-                                                                              ]
-                                                                            ]
-                                                                          },
-                                                                          "transform" : {
-                                                                            "matrix" : [
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              0,
-                                                                              1
-                                                                            ]
-                                                                          }
-                                                                        }
-                                                                      },
-                                                                      "factory" : {
-                                                                        "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                        "version" : "0.0"
-                                                                      },
-                                                                      "runtimeAttributes" : [
-                                                                        [
-                                                                          "RuntimeIdentifier",
-                                                                          {
-                                                                            "typeName" : "UUID",
-                                                                            "value" : "74D03F6E-6BE0-4C8E-A21C-EE1041370824"
-                                                                          }
-                                                                        ]
-                                                                      ]
-                                                                    },
-                                                                    "transform" : {
-                                                                      "matrix" : [
-                                                                        1,
-                                                                        0,
-                                                                        0,
-                                                                        0,
-                                                                        0,
-                                                                        1,
-                                                                        0,
-                                                                        0,
-                                                                        0,
-                                                                        0,
-                                                                        1,
-                                                                        0,
-                                                                        0,
-                                                                        0,
-                                                                        0,
-                                                                        1
-                                                                      ]
-                                                                    }
-                                                                  }
-                                                                },
-                                                                "factory" : {
-                                                                  "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                                  "version" : "0.0"
-                                                                },
-                                                                "runtimeAttributes" : [
-                                                                  [
-                                                                    "RuntimeIdentifier",
-                                                                    {
-                                                                      "typeName" : "UUID",
-                                                                      "value" : "4482920B-8DDD-4866-9768-095CA10BEB04"
-                                                                    }
-                                                                  ]
-                                                                ]
-                                                              },
-                                                              "transform" : {
-                                                                "matrix" : [
-                                                                  1,
-                                                                  0,
-                                                                  0,
-                                                                  0,
-                                                                  0,
-                                                                  1,
-                                                                  0,
-                                                                  0,
-                                                                  0,
-                                                                  0,
-                                                                  1,
-                                                                  0,
-                                                                  0,
-                                                                  0,
-                                                                  0,
-                                                                  1
-                                                                ]
-                                                              }
-                                                            }
-                                                          },
-                                                          "factory" : {
-                                                            "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                            "version" : "0.0"
-                                                          },
-                                                          "runtimeAttributes" : [
-                                                            [
-                                                              "RuntimeIdentifier",
-                                                              {
-                                                                "typeName" : "UUID",
-                                                                "value" : "DC06DB99-069B-44A7-B2CC-E58170D8C480"
-                                                              }
-                                                            ]
-                                                          ]
-                                                        },
-                                                        "transform" : {
-                                                          "matrix" : [
-                                                            4.921870231628418,
-                                                            0,
-                                                            0,
-                                                            0,
-                                                            0,
-                                                            4.921870231628418,
-                                                            0,
-                                                            0,
-                                                            0,
-                                                            0,
-                                                            4.921870231628418,
-                                                            0,
-                                                            0,
-                                                            0.79822999238967896,
-                                                            -0.078709997236728668,
-                                                            1
-                                                          ]
-                                                        }
-                                                      }
-                                                    },
-                                                    "factory" : {
-                                                      "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                      "version" : "0.0"
-                                                    },
-                                                    "runtimeAttributes" : [
-                                                      [
-                                                        "RuntimeIdentifier",
-                                                        {
-                                                          "typeName" : "UUID",
-                                                          "value" : "878CBD11-D691-49ED-9B2B-DC36F86825D7"
-                                                        }
-                                                      ]
-                                                    ]
-                                                  },
-                                                  "transform" : {
-                                                    "matrix" : [
-                                                      1,
-                                                      0,
-                                                      0,
-                                                      0,
-                                                      0,
-                                                      1,
-                                                      0,
-                                                      0,
-                                                      0,
-                                                      0,
-                                                      1,
-                                                      0,
-                                                      0,
-                                                      0,
-                                                      0,
-                                                      1
-                                                    ]
-                                                  }
-                                                }
-                                              },
-                                              "factory" : {
-                                                "identifier" : "com.apple.af.FileImportAssetFactory",
-                                                "version" : "0.0"
-                                              },
-                                              "runtimeAttributes" : [
-                                                [
-                                                  "RuntimeIdentifier",
-                                                  {
-                                                    "typeName" : "UUID",
-                                                    "value" : "C49D06BE-9269-4DC0-83C1-A8DE41DCD5EF"
-                                                  }
-                                                ]
-                                              ]
-                                            },
-                                            "transform" : {
-                                              "matrix" : [
-                                                1,
-                                                0,
-                                                0,
-                                                0,
-                                                0,
-                                                1.7881393432617188e-07,
-                                                -0.99999988079071045,
-                                                0,
-                                                0,
-                                                0.99999988079071045,
-                                                1.7881393432617188e-07,
-                                                0,
-                                                0,
-                                                0,
-                                                0,
-                                                1
-                                              ]
-                                            }
-                                          }
-                                        },
-                                        "factory" : {
-                                          "identifier" : "com.apple.af.FileImportAssetFactory",
-                                          "version" : "0.0"
-                                        },
-                                        "runtimeAttributes" : [
-                                          [
-                                            "RuntimeIdentifier",
-                                            {
-                                              "typeName" : "UUID",
-                                              "value" : "31B8FB5A-E0E3-4E4F-ADE5-200BCFC08693"
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "transform" : {
-                                        "matrix" : [
-                                          2.002556324005127,
-                                          0,
-                                          0,
-                                          0,
-                                          0,
-                                          2.002556324005127,
-                                          0,
-                                          0,
-                                          0,
-                                          0,
-                                          2.002556324005127,
-                                          0,
-                                          0,
-                                          0,
-                                          0,
-                                          1
-                                        ]
-                                      }
-                                    }
-                                  },
-                                  "factory" : {
-                                    "identifier" : "com.apple.af.FileImportAssetFactory",
-                                    "version" : "0.0"
-                                  },
-                                  "runtimeAttributes" : [
-                                    [
-                                      "RuntimeIdentifier",
-                                      {
-                                        "typeName" : "UUID",
-                                        "value" : "496F8C6B-0E31-47B9-A88D-D6D2BFD2CAE2"
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "transform" : {
-                                  "matrix" : [
-                                    1,
-                                    0,
-                                    0,
-                                    0,
-                                    0,
-                                    1,
-                                    0,
-                                    0,
-                                    0,
-                                    0,
-                                    1,
-                                    0,
-                                    0,
-                                    0,
-                                    0,
-                                    1
-                                  ]
-                                }
-                              }
-                            },
-                            "factory" : {
-                              "identifier" : "com.apple.af.FileImportAssetFactory",
-                              "version" : "0.0"
-                            },
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "9281C67D-ECA2-423D-B7EA-CD52659CEDEF"
-                                }
-                              ]
-                            ]
-                          },
-                          "transform" : {
-                            "matrix" : [
-                              0.0057144695892930031,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0057144695892930031,
-                              0,
-                              0,
-                              0,
-                              0,
-                              0.0057144695892930031,
-                              0,
-                              0,
-                              0,
-                              0,
-                              1
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.af.Group",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "D2A5CF3B-6629-40C1-9A52-9FEB325B6243"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "cat"
-                          }
-                        ],
-                        [
-                          "rigidBody-enabled",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ],
-                        [
-                          "rigidBody-motionType",
-                          {
-                            "typeName" : "REMotionType",
-                            "value" : "static"
-                          }
-                        ],
-                        [
-                          "rigidBody-shapeType",
-                          {
-                            "typeName" : "String",
-                            "value" : "capsule"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0.012600000016391277,
-                        0,
-                        1
-                      ]
-                    }
-                  }
+                  "E27E2A2D-2A9C-44D2-8F24-4ED193B21EA9" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -3996,9 +2381,414 @@
                   0.3949037492275238,
                   0.91868495941162109,
                   0,
-                  0.12581519782543182,
-                  0.94149798154830933,
-                  1.9695098400115967,
+                  0.11334271728992462,
+                  1.3148905038833618,
+                  3.3502635955810547,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        },
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "alignment" : "horizontal",
+                "name" : "surface"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "33981E9F-1089-4FE9-BCD3-FC1F75BEDECA",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "9DEF71EE-0994-498D-A8D4-FD7AC741806D" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:7204b4739c71390d64f4f579bb87c75c\/Heart_Emoji.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "98C2BFD3-8876-4D75-825B-6E5B75F75494"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "9354B4EC-D8A2-42A8-ABAC-7A0FF0E90748"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "heart"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "plastic",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "dynamic"
+                          }
+                        ],
+                        [
+                          "rigidBody-shapeType",
+                          {
+                            "typeName" : "String",
+                            "value" : "capsule"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        -0.12285502254962921,
+                        0,
+                        -1.0740286882082728e-08,
+                        0,
+                        0,
+                        0.12285502254962921,
+                        0,
+                        0,
+                        1.0740286882082728e-08,
+                        0,
+                        -0.12285502254962921,
+                        0,
+                        0.28613218665122986,
+                        0.11387187242507935,
+                        -0.54309481382369995,
+                        1
+                      ]
+                    }
+                  },
+                  "25DCDDDD-E199-4143-9B76-4F55491BBD5F" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "Heart",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.99995917081832886,
+                  8.0559395598811534e-08,
+                  0.0090327123180031776,
+                  0,
+                  0.0042499187402427197,
+                  0.88239413499832153,
+                  -0.47049164772033691,
+                  0,
+                  -0.0079704513773322105,
+                  0.47051084041595459,
+                  0.8823581337928772,
+                  0,
+                  0.15347853302955627,
+                  0.79102140665054321,
+                  1.3611345291137695,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        },
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "alignment" : "horizontal",
+                "name" : "surface"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "505A0B57-92C9-4337-A25C-006E2DCF8630",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "0E9E25E6-21F2-442D-8DE3-64765B6AF4D9" : null,
+                  "6F88E5A6-EFBF-4AEE-8925-3CA6DD679756" : null,
+                  "21E28B5D-DD97-40A2-95FF-D7CF054ECAD9" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.10000000000000001
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "clearCoatPaint"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.50999999046325684,
+                              0.85000002384185791,
+                              0.17000000178813934,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "sphere"
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "C0297A4D-4A94-4C57-9D8A-04B159952FEE"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "ball"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "plastic",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "dynamic"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.68244975805282593,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.68244975805282593,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.68244975805282593,
+                        0,
+                        0.29848867654800415,
+                        0.03493141382932663,
+                        0.00055962800979614258,
+                        1
+                      ]
+                    }
+                  },
+                  "08473B3A-3EC0-44ED-AB35-90FA7F8C73EE" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "Ball",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.99995917081832886,
+                  8.0792226242465404e-08,
+                  0.0090327123180031776,
+                  0,
+                  0.0043608848936855793,
+                  0.87573301792144775,
+                  -0.48277610540390015,
+                  0,
+                  -0.0079102823510766029,
+                  0.48279571533203125,
+                  0.87569719552993774,
+                  0,
+                  0.10754717886447906,
+                  1.0527522563934326,
+                  1.8203809261322021,
                   1
                 ],
                 "sceneTransform" : [

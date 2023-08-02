@@ -42,6 +42,7 @@ struct ContentView : View {
 struct ARViewContainer: UIViewRepresentable {
     
     let vm: IconViewModel
+
     
     // Set up basic ARView
     func makeUIView(context: Context) -> ARView {
