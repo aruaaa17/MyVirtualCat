@@ -44,7 +44,9 @@ class Coordinator {
         guard let modelEntity = entity else {
             return nil
         }
+        
         modelEntity.position = SIMD3(0,0,0)
+        
         anchor.addChild(modelEntity)
         return anchor
     }
@@ -69,7 +71,10 @@ class Coordinator {
             guard let anchor = createAnchorEntity(from: result, with: vm.selectedIcon) else {
                 return
             }
-
+            
+            // To-Fix: Notify is not working!!!!
+//            let scene = try! Experience.loadFish()
+//            scene.actions.feed.onAction
             
             let catEntity = try! Experience.loadCat()
                         anchor.addChild(catEntity)

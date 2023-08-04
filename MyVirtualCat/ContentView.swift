@@ -12,30 +12,22 @@ import AVFoundation
 
 // view protocol
 struct ContentView : View {
+    
     @StateObject private var vm = IconViewModel()
-    let icons = ["fish", "ball", "heart"]
+    
+    var models:[String] = ["fish", "ball", "heart"]
     
     var body: some View {
-        VStack {
+        ZStack {
             ARViewContainer(vm: vm).edgesIgnoringSafeArea(.all)
-            ScrollView(.horizontal) {
-                HStack(spacing: 25) {
-                    ForEach(icons, id: \.self) { name in
-                        Image(name)
-                            .resizable()
-                            .frame(width: 100, height: 100)
-                            .border(.black, width: vm.selectedIcon == name ? 1.0: 0.0)
-                            .onTapGesture {
-                                vm.selectedIcon = name
-                            }
-                        Spacer()
-                    }
-                }
-            }
+            
+            ModelPicker(models: self.models, vm: vm)
+            
+            PlacementButtonView()
+            
         }
     }
 }
-
 
 
 
@@ -47,6 +39,7 @@ struct ARViewContainer: UIViewRepresentable {
     // Set up basic ARView
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
+        
         // Add ARWorld config
         let session = arView.session
         let config = ARWorldTrackingConfiguration()
@@ -55,6 +48,10 @@ struct ARViewContainer: UIViewRepresentable {
         
         arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
         context.coordinator.arView = arView
+        
+//        let scene = try! Experience.loadFish()
+//        _ = scene.actions.feed.onAction
+        
         arView.addCoachingOverlay()
         return arView
         
@@ -64,6 +61,67 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeCoordinator() -> Coordinator {
         Coordinator(vm: vm)
+    }
+}
+
+struct ModelPicker: View {
+    
+    var models: [String]
+    let vm: IconViewModel
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack(spacing: 25) {
+                ForEach(0 ..< self.models.count, id: \.self) { index in
+                    Button(action: {
+                        print("DEBUG: click model button\(self.models[index])")
+                        
+                    }, label: {
+                        Image(uiImage: UIImage(named: self.models[index])!)
+                            .resizable()
+                            .cornerRadius(15)
+                            .frame(width: 80, height: 80)
+                            .aspectRatio(1/1, contentMode: .fit)
+                            .border(.black, width: vm.selectedIcon == self.models[index] ? 1.0: 0.0)
+                            .background(Color.white)
+                            .onTapGesture { vm.selectedIcon = self.models[index] }
+                    })
+                    .buttonStyle(PlainButtonStyle())
+                    Spacer()
+                }
+            }
+        }
+        .padding(20)
+        .background(Color.black.opacity(0.5))
+    }
+}
+
+struct PlacementButtonView: View {
+    var body: some View {
+        HStack{
+            // cancel button
+            Button(action:{
+                print("DEBUG: click cancel")
+            }){
+                Image(systemName: "xmark")
+                    .frame(width: 60, height: 60)
+                    .font(.title)
+                    .background(Color.white.opacity(0.75))
+                    .cornerRadius(30)
+                    .padding(20)
+            }
+            //confirm button
+            Button(action:{
+                print("DEBUG: click confirm")
+            }){
+                Image(systemName: "checkmark")
+                    .frame(width: 60, height: 60)
+                    .font(.title)
+                    .background(Color.white.opacity(0.75))
+                    .cornerRadius(30)
+                    .padding(20)
+            }
+        }
     }
 }
 

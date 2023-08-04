@@ -35,7 +35,7 @@
                                           "audioGain" : 1,
                                           "clipDuration" : 0,
                                           "clipStart" : 0,
-                                          "iterations" : 1,
+                                          "iterations" : 8,
                                           "multiplePerformType" : "ignore request",
                                           "muteAudio" : false,
                                           "reversed" : false,
@@ -70,8 +70,8 @@
                       ],
                       "identifier" : "1BF005DD-ACBA-46B1-B990-0AFD8486127C",
                       "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
+                      "isLooping" : true,
+                      "isModal" : true,
                       "name" : "Behavior",
                       "triggers" : [
                         {
@@ -155,7 +155,7 @@
                         1
                       ],
                       "identifier" : "0825329A-DFA0-4F2B-A20E-3FF797F35C16",
-                      "isEnabled" : true,
+                      "isEnabled" : false,
                       "isLooping" : false,
                       "isModal" : false,
                       "name" : "Tap Cat",
@@ -170,333 +170,6 @@
                                 "name" : "start"
                               },
                               "identifier" : "797152B0-087D-4476-BA04-7547C5C653EA",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ]
-                    }
-                  ],
-                  "__version" : 3
-                },
-                {
-                  "__content" : [
-                    {
-                      "accessibility" : {
-                        "__content" : [
-                          {
-                            "isEnabled" : false
-                          }
-                        ],
-                        "__version" : 1
-                      },
-                      "actionGroups" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "angularCoefficient" : 1,
-                                          "animationStyle" : "basic",
-                                          "buildOutAnimationType" : "none",
-                                          "distance" : 1,
-                                          "duration" : 0,
-                                          "fadeOut" : true,
-                                          "linearCoefficient" : 1,
-                                          "moveEase" : "easeInOut",
-                                          "respectPhysics" : false,
-                                          "target" : [
-
-                                          ]
-                                        },
-                                        "name" : {
-                                          "type" : "hide"
-                                        }
-                                      },
-                                      "identifier" : "C321718F-06C4-40EA-82FE-BBFAE2576215",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "0358C38B-75C7-4855-8D43-6002C1C4AED9",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ],
-                      "color" : [
-                        0.49019607901573181,
-                        0.7450980544090271,
-                        0.94901961088180542,
-                        1
-                      ],
-                      "identifier" : "2F927C63-71D5-480E-BB09-9A627275D51C",
-                      "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
-                      "name" : "Behavior 1",
-                      "triggers" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurationBox" : {
-                                "configuration" : {
-
-                                },
-                                "name" : "start"
-                              },
-                              "identifier" : "001FD288-B957-4271-978B-A4E776295D90",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ]
-                    }
-                  ],
-                  "__version" : 3
-                },
-                {
-                  "__content" : [
-                    {
-                      "accessibility" : {
-                        "__content" : [
-                          {
-                            "isEnabled" : false
-                          }
-                        ],
-                        "__version" : 1
-                      },
-                      "actionGroups" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "angularCoefficient" : 1,
-                                          "animationStyle" : "basic",
-                                          "buildOutAnimationType" : "none",
-                                          "distance" : 1,
-                                          "duration" : 0,
-                                          "fadeOut" : true,
-                                          "linearCoefficient" : 1,
-                                          "moveEase" : "easeInOut",
-                                          "respectPhysics" : false,
-                                          "target" : [
-
-                                          ]
-                                        },
-                                        "name" : {
-                                          "type" : "hide"
-                                        }
-                                      },
-                                      "identifier" : "CF652D24-E0E9-452F-813D-FD4ABD8964A2",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "4E89678B-A8C6-4B9F-925D-A5DA224B5067",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ],
-                      "color" : [
-                        0.30980393290519714,
-                        0.56470590829849243,
-                        0.99215686321258545,
-                        1
-                      ],
-                      "identifier" : "8E7D98FB-E9F3-4714-B1DC-7A61F77EF6A2",
-                      "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
-                      "name" : "Behavior 2",
-                      "triggers" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurationBox" : {
-                                "configuration" : {
-
-                                },
-                                "name" : "start"
-                              },
-                              "identifier" : "A67E120A-F348-422C-98C7-043F647A2288",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ]
-                    }
-                  ],
-                  "__version" : 3
-                },
-                {
-                  "__content" : [
-                    {
-                      "accessibility" : {
-                        "__content" : [
-                          {
-                            "isEnabled" : false
-                          }
-                        ],
-                        "__version" : 1
-                      },
-                      "actionGroups" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "angularCoefficient" : 1,
-                                          "animationStyle" : "basic",
-                                          "buildOutAnimationType" : "none",
-                                          "distance" : 1,
-                                          "duration" : 0,
-                                          "fadeOut" : true,
-                                          "linearCoefficient" : 1,
-                                          "moveEase" : "easeInOut",
-                                          "respectPhysics" : false,
-                                          "target" : [
-
-                                          ]
-                                        },
-                                        "name" : {
-                                          "type" : "hide"
-                                        }
-                                      },
-                                      "identifier" : "B0D58AF5-BEEA-4451-9F50-8252996B7368",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "FEBC4864-6F50-4FAC-BCFD-14FBC7BDAF0B",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ],
-                      "color" : [
-                        0.56078433990478516,
-                        0.47058823704719543,
-                        0.80392158031463623,
-                        1
-                      ],
-                      "identifier" : "B1D756E6-B55F-4043-B9E4-CCF2BF5BB908",
-                      "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
-                      "name" : "Behavior 3",
-                      "triggers" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurationBox" : {
-                                "configuration" : {
-
-                                },
-                                "name" : "start"
-                              },
-                              "identifier" : "C75C0741-C39D-4DA7-AE9B-5E957C6327E2",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ]
-                    }
-                  ],
-                  "__version" : 3
-                },
-                {
-                  "__content" : [
-                    {
-                      "accessibility" : {
-                        "__content" : [
-                          {
-                            "isEnabled" : false
-                          }
-                        ],
-                        "__version" : 1
-                      },
-                      "actionGroups" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "targetScene" : "EB4FC03B-7646-4D0F-9ECB-CBEE3664620E"
-                                        },
-                                        "name" : {
-                                          "type" : "changeScene"
-                                        }
-                                      },
-                                      "identifier" : "46F46A78-37F9-4367-A509-CCC14CFD0337",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "ADB3F46E-94DF-467D-A132-7C85823FFD3D",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ],
-                      "color" : [
-                        0.64705884456634521,
-                        0.32156863808631897,
-                        0.76470589637756348,
-                        1
-                      ],
-                      "identifier" : "D256D9DF-2715-4044-8B17-6E482CBAE8DE",
-                      "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
-                      "name" : "SwitchToFish",
-                      "triggers" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurationBox" : {
-                                "configuration" : {
-                                  "target" : [
-
-                                  ]
-                                },
-                                "name" : "tapTarget"
-                              },
-                              "identifier" : "E9DB2C88-06EE-4E9B-8B60-0B7AE5452674",
                               "isEnabled" : true
                             }
                           ],
@@ -1874,7 +1547,7 @@
                       ],
                       "identifier" : "81676559-1168-4F1C-B60D-C150B56595AA",
                       "isEnabled" : true,
-                      "isLooping" : false,
+                      "isLooping" : true,
                       "isModal" : false,
                       "name" : "Behavior",
                       "triggers" : [
@@ -1920,9 +1593,9 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "force" : [
-                                            0,
-                                            0.33974897861480713,
-                                            -1.3412055969238281
+                                            0.59653913974761963,
+                                            0.89615380764007568,
+                                            -1.4627050161361694
                                           ],
                                           "target" : [
                                             "BA8D2647-C5D6-4B12-85FC-907D528F7647"
@@ -1933,6 +1606,26 @@
                                         }
                                       },
                                       "identifier" : "5D91A773-905C-44AB-99DA-6C23C0BAA352",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "BA8D2647-C5D6-4B12-85FC-907D528F7647"
+                                          ],
+                                          "userIdentifier" : "Feed"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "8E6632D7-4637-4F89-93FA-673844D9373A",
                                       "isEnabled" : true
                                     }
                                   ],
@@ -2006,7 +1699,7 @@
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "8B365EF4-8661-4855-8772-B5DC631161A4",
+                              "identifier" : "1C067E84-10B6-4FB2-AAEC-795A2F7B7EE8",
                               "isEnabled" : true
                             }
                           ],
