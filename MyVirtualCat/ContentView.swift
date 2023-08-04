@@ -18,7 +18,7 @@ struct ContentView : View {
     var models:[String] = ["fish", "ball", "heart"]
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             ARViewContainer(vm: vm).edgesIgnoringSafeArea(.all)
             
             ModelPicker(models: self.models, vm: vm)
@@ -72,6 +72,7 @@ struct ModelPicker: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack(spacing: 25) {
+//                Spacer()
                 ForEach(0 ..< self.models.count, id: \.self) { index in
                     Button(action: {
                         print("DEBUG: click model button\(self.models[index])")
@@ -81,7 +82,7 @@ struct ModelPicker: View {
                             .resizable()
                             .cornerRadius(15)
                             .frame(width: 80, height: 80)
-                            .aspectRatio(1/1, contentMode: .fit)
+//                            .aspectRatio(1/1, contentMode: .fit)
                             .border(.black, width: vm.selectedIcon == self.models[index] ? 1.0: 0.0)
                             .background(Color.white)
                             .onTapGesture { vm.selectedIcon = self.models[index] }
@@ -104,7 +105,7 @@ struct PlacementButtonView: View {
                 print("DEBUG: click cancel")
             }){
                 Image(systemName: "xmark")
-                    .frame(width: 60, height: 60)
+                    .frame(width: 30, height: 30)
                     .font(.title)
                     .background(Color.white.opacity(0.75))
                     .cornerRadius(30)
@@ -115,7 +116,7 @@ struct PlacementButtonView: View {
                 print("DEBUG: click confirm")
             }){
                 Image(systemName: "checkmark")
-                    .frame(width: 60, height: 60)
+                    .frame(width: 30, height: 30)
                     .font(.title)
                     .background(Color.white.opacity(0.75))
                     .cornerRadius(30)
