@@ -13,6 +13,8 @@ import AVFoundation
 // view protocol
 struct ContentView : View {
     
+    @State private var isPlacementEnable = false
+    
     @StateObject private var vm = IconViewModel()
     
     var models:[String] = ["fish", "ball", "heart"]
@@ -20,10 +22,10 @@ struct ContentView : View {
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer(vm: vm).edgesIgnoringSafeArea(.all)
-            
-            ModelPicker(models: self.models, vm: vm)
-            
-            PlacementButtonView()
+            if self.isPlacementEnable {
+                PlacementButtonView(isPlacementEnable: self.$isPlacementEnable)
+            } else {
+                ModelPickerView(models: self.models, vm: vm, isPlacementEnable: self.$isPlacementEnable)}
             
         }
     }
@@ -64,10 +66,11 @@ struct ARViewContainer: UIViewRepresentable {
     }
 }
 
-struct ModelPicker: View {
+struct ModelPickerView: View {
     
     var models: [String]
     let vm: IconViewModel
+    @Binding var isPlacementEnable: Bool
     
     var body: some View {
         ScrollView(.horizontal) {
@@ -76,6 +79,7 @@ struct ModelPicker: View {
                 ForEach(0 ..< self.models.count, id: \.self) { index in
                     Button(action: {
                         print("DEBUG: click model button\(self.models[index])")
+                        self.isPlacementEnable = true
                         
                     }, label: {
                         Image(uiImage: UIImage(named: self.models[index])!)
@@ -98,11 +102,13 @@ struct ModelPicker: View {
 }
 
 struct PlacementButtonView: View {
+    @Binding var isPlacementEnable: Bool
     var body: some View {
         HStack{
             // cancel button
             Button(action:{
                 print("DEBUG: click cancel")
+                self.resetPlacementParameters()
             }){
                 Image(systemName: "xmark")
                     .frame(width: 30, height: 30)
@@ -114,6 +120,7 @@ struct PlacementButtonView: View {
             //confirm button
             Button(action:{
                 print("DEBUG: click confirm")
+                self.resetPlacementParameters()
             }){
                 Image(systemName: "checkmark")
                     .frame(width: 30, height: 30)
@@ -123,6 +130,9 @@ struct PlacementButtonView: View {
                     .padding(20)
             }
         }
+    }
+    func resetPlacementParameters() {
+        self.isPlacementEnable = false
     }
 }
 
