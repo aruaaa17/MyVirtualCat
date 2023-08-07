@@ -17,13 +17,20 @@ struct ContentView : View {
     
     @StateObject private var vm = IconViewModel()
     
+//    func test() -> some View {
+//        print(isPlacementEnable)
+//        return Text("test")
+//    }
+    
     var models:[String] = ["fish", "ball", "heart"]
     
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer(vm: vm).edgesIgnoringSafeArea(.all)
+            
             if self.isPlacementEnable {
                 PlacementButtonView(isPlacementEnable: self.$isPlacementEnable)
+//                test()
             } else {
                 ModelPickerView(models: self.models, vm: vm, isPlacementEnable: self.$isPlacementEnable)}
             
