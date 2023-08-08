@@ -21,6 +21,7 @@
 		837D404F2A826B9200D92058 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 837D404E2A826B9200D92058 /* FocusEntity */; };
 		837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 837D40502A82F3BE00D92058 /* Experience.rcproject */; };
 		837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40522A82F58D00D92058 /* ModelPicker.swift */; };
+		837D40552A82F72F00D92058 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40542A82F72F00D92058 /* CustomARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		837D404B2A82699E00D92058 /* heart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = heart.usdz; sourceTree = "<group>"; };
 		837D40502A82F3BE00D92058 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		837D40522A82F58D00D92058 /* ModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPicker.swift; sourceTree = "<group>"; };
+		837D40542A82F72F00D92058 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				83400E192A71C36B00A90276 /* Info.plist */,
 				837D40502A82F3BE00D92058 /* Experience.rcproject */,
 				832098232A70B65C0001718C /* AppDelegate.swift */,
+				837D40542A82F72F00D92058 /* CustomARView.swift */,
 				832098252A70B65C0001718C /* ContentView.swift */,
 				837D40472A8265ED00D92058 /* Model.swift */,
 				83400E2A2A7380D000A90276 /* Coordinator.swift */,
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837D40552A82F72F00D92058 /* CustomARView.swift in Sources */,
 				835B2C182A79CA5C006EC2E3 /* IconViewModel.swift in Sources */,
 				832098262A70B65C0001718C /* ContentView.swift in Sources */,
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
