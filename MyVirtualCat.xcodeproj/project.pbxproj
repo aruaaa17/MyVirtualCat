@@ -19,6 +19,8 @@
 		837D404A2A82696400D92058 /* fish.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 837D40492A82696400D92058 /* fish.usdz */; };
 		837D404C2A82699E00D92058 /* heart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 837D404B2A82699E00D92058 /* heart.usdz */; };
 		837D404F2A826B9200D92058 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 837D404E2A826B9200D92058 /* FocusEntity */; };
+		837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 837D40502A82F3BE00D92058 /* Experience.rcproject */; };
+		837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40522A82F58D00D92058 /* ModelPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		837D40472A8265ED00D92058 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		837D40492A82696400D92058 /* fish.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fish.usdz; sourceTree = "<group>"; };
 		837D404B2A82699E00D92058 /* heart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = heart.usdz; sourceTree = "<group>"; };
+		837D40502A82F3BE00D92058 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		837D40522A82F58D00D92058 /* ModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				83400E192A71C36B00A90276 /* Info.plist */,
+				837D40502A82F3BE00D92058 /* Experience.rcproject */,
 				832098232A70B65C0001718C /* AppDelegate.swift */,
 				832098252A70B65C0001718C /* ContentView.swift */,
 				837D40472A8265ED00D92058 /* Model.swift */,
 				83400E2A2A7380D000A90276 /* Coordinator.swift */,
 				835B2C172A79CA5C006EC2E3 /* IconViewModel.swift */,
 				83400E2C2A73811900A90276 /* ARView+Extensions.swift */,
+				837D40522A82F58D00D92058 /* ModelPicker.swift */,
 				832098292A70B65E0001718C /* Assets.xcassets */,
 				837D40422A80DF7900D92058 /* Models */,
 				8320982B2A70B65E0001718C /* Preview Content */,
@@ -184,6 +190,8 @@
 				83400E2B2A7380D000A90276 /* Coordinator.swift in Sources */,
 				83400E2D2A73811900A90276 /* ARView+Extensions.swift in Sources */,
 				83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */,
+				837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */,
+				837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */,
 				837D40482A8265ED00D92058 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
