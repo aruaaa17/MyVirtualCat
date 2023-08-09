@@ -37,7 +37,6 @@ struct ContentView : View {
             return availableModels
         }()
     
-//    @StateObject private var vm = IconViewModel()
     
 //    func test() -> some View {
 //        print(isPlacementEnable)
@@ -72,36 +71,13 @@ struct ARViewContainer: UIViewRepresentable {
     // Set up basic ARView
     func makeUIView(context: Context) -> CustomARView {
 //        let arView = ARView(frame: .zero)
-//        let arView = CustomARView(frame: .zero)
         let arView = CustomARView(frame: .zero)
         arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
         context.coordinator.arView = arView
         arView.addCoachingOverlay()
         
         return arView
-        // Add ARWorld config
-//        let session = arView.session
-//        let config = ARWorldTrackingConfiguration()
-//        config.planeDetection = .horizontal
-//        config.environmentTexturing = .automatic
-//        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-//            config.sceneReconstruction = .mesh
-//        }
-//        arView.session.run(config)
-//
-//        arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
-//        context.coordinator.arView = arView
-        
-//        let scene = try! Experience.loadFish()
-//        _ = scene.actions.feed.onAction
-        
-//        arView.addCoachingOverlay()
-//        let arConfig = ARWorldTrackingConfiguration()
-//        arConfig.planeDetection = [.horizontal, .vertical]
-//        arView.session.run(arConfig)
-//        _ = FocusEntity(on: arView, style: .classic())
-//        return arView
-        
+
     }
     
     func updateUIView(_ uiView: CustomARView, context: Context) {
@@ -111,7 +87,7 @@ struct ARViewContainer: UIViewRepresentable {
             if let modelEntity  = model.modelEntity{
                 print("DEBUG adding model to scene = \(model.modelName)")
                 
-                let anchorEntity = AnchorEntity(plane: .any)
+                let anchorEntity = AnchorEntity(plane: .horizontal)
                 anchorEntity.addChild(modelEntity.clone(recursive: true))
                 
                 uiView.scene.addAnchor(anchorEntity)
@@ -124,19 +100,7 @@ struct ARViewContainer: UIViewRepresentable {
                 self.modelConfirmForPlacement = nil
             }
         }
-//        if let modelName = self.confirmModel{
-//            print("DEBUG modelName \(modelName)")
-//            let filename = modelName + ".usdz"
-//            let modelEntity = try!ModelEntity.load(named: filename)
-//
-//            let anchorEntity = AnchorEntity(plane: .any)
-//            anchorEntity.addChild(modelEntity)
-//            uiView.scene.addAnchor(anchorEntity)
-//
-//            DispatchQueue.main.async {
-//                self.confirmModel = nil
-//            }
-//        }
+
     }
     
     func makeCoordinator() -> Coordinator {

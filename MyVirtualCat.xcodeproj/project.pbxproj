@@ -22,6 +22,7 @@
 		837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 837D40502A82F3BE00D92058 /* Experience.rcproject */; };
 		837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40522A82F58D00D92058 /* ModelPicker.swift */; };
 		837D40552A82F72F00D92058 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40542A82F72F00D92058 /* CustomARView.swift */; };
+		837D40572A8324A300D92058 /* ball.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 837D40562A8324A300D92058 /* ball.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		837D40502A82F3BE00D92058 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		837D40522A82F58D00D92058 /* ModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPicker.swift; sourceTree = "<group>"; };
 		837D40542A82F72F00D92058 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		837D40562A8324A300D92058 /* ball.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ball.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		837D40422A80DF7900D92058 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				837D40562A8324A300D92058 /* ball.usdz */,
 				837D404B2A82699E00D92058 /* heart.usdz */,
 				837D40492A82696400D92058 /* fish.usdz */,
 			);
@@ -177,6 +180,7 @@
 				8320982D2A70B65E0001718C /* Preview Assets.xcassets in Resources */,
 				837D404C2A82699E00D92058 /* heart.usdz in Resources */,
 				8320982A2A70B65E0001718C /* Assets.xcassets in Resources */,
+				837D40572A8324A300D92058 /* ball.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

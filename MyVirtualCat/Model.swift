@@ -15,6 +15,8 @@ class Model{
     var modelEntity: ModelEntity?
     
     private var cancellable: AnyCancellable? = nil
+    @Published var position: SIMD3<Float> = SIMD3<Float>(0, 0, 0)
+//    @Published var scale: SIMD3<Float> = SIMD3<Float>(0.001, 0.001, 0.001)
     
     init(modelName: String) {
         self.modelName = modelName
@@ -30,9 +32,16 @@ class Model{
             },receiveValue: {
                 modelEntity in
                 // get out modelEntity
+                modelEntity.transform.translation = self.position
+                modelEntity.scale = self.reletiveScale(relativeTo: try! Experience.loadCat())
                 self.modelEntity = modelEntity
+                
                 print("DEBUG : successfully loaded modelEnity for modelName :\(self.modelName)")
             })
         
+    }
+    
+    func reletiveScale(relativeTo referenceEntity: Entity?) -> SIMD3<Float> {
+        return 0.25 * (referenceEntity?.scale ?? SIMD3<Float>(0.001, 0.001, 0.001))
     }
 }

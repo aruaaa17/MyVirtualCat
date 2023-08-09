@@ -14,6 +14,7 @@ class Coordinator {
     
     var arView: ARView?
     var catAnchor: AnchorEntity?
+    let catEntity = try! Experience.loadCat()
     
     @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
         
@@ -37,15 +38,11 @@ class Coordinator {
             let catEntity = try! Experience.loadCat()
                         anchor.addChild(catEntity)
             // Add light to cat model
-            let lightEntity = PointLight()
-            lightEntity.light.color = .orange
-            lightEntity.light.intensity = 1000
-            lightEntity.light.attenuationRadius = 0.5
-
-            lightEntity.look(at: [0.05, 0.05, 0.05], from: [0.1, 0.1, 0.1], relativeTo: catEntity)
+            let lightEntity = Lighting().light
             
-            catEntity.addChild(lightEntity)
+            catEntity.components.set(lightEntity)
             arView.scene.addAnchor(anchor)
+            arView.scene.anchors.append(catEntity)
             
             // Save new cat model
             catAnchor = anchor
@@ -58,4 +55,13 @@ class Coordinator {
         }
     }
     
+}
+
+class Lighting: Entity, HasDirectionalLight {
+    
+    required init() {
+        super.init()
+        
+        self.light = DirectionalLightComponent(color: .orange, intensity: 4500, isRealWorldProxy: true)
+    }
 }
