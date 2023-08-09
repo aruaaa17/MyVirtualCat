@@ -73,9 +73,12 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> CustomARView {
 //        let arView = ARView(frame: .zero)
 //        let arView = CustomARView(frame: .zero)
-        CustomARView(frame: .zero)
+        let arView = CustomARView(frame: .zero)
+        arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
+        context.coordinator.arView = arView
+        arView.addCoachingOverlay()
         
-//        return arView
+        return arView
         // Add ARWorld config
 //        let session = arView.session
 //        let config = ARWorldTrackingConfiguration()
@@ -136,9 +139,9 @@ struct ARViewContainer: UIViewRepresentable {
 //        }
     }
     
-//    func makeCoordinator() -> Coordinator {
-//        Coordinator(vm: vm)
-//    }
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
 }
 
 

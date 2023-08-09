@@ -15,11 +15,7 @@ class CustomARView: ARView{
     var focusEntity: FocusEntity?
     required init(frame frameRect: CGRect) {
         super.init(frame: frameRect)
-//        self.setupConfig()
         focusEntity = FocusEntity(on: self, focus: .plane)
-//        focusSquare.viewDelegate = self
-//        focusSquare.delegate = self
-//        focusSquare.setAutoUpdate(to: true)
     }
     
     @objc required dynamic init?(coder decoder: NSCoder) {
@@ -27,7 +23,7 @@ class CustomARView: ARView{
     }
     func setupARView(){
         let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal,.vertical]
+        config.planeDetection = [.horizontal]
         config.environmentTexturing = .automatic
         if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh){
             config.sceneReconstruction = .mesh
