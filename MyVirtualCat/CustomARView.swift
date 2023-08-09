@@ -15,7 +15,7 @@ class CustomARView: ARView{
     var focusEntity: FocusEntity?
     required init(frame frameRect: CGRect) {
         super.init(frame: frameRect)
-        focusEntity = FocusEntity(on: self, focus: .plane)
+        focusEntity = FocusEntity(on: self, focus: .classic)
     }
     
     @objc required dynamic init?(coder decoder: NSCoder) {

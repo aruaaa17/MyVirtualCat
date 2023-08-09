@@ -16,9 +16,10 @@ class Model{
     
     private var cancellable: AnyCancellable? = nil
     @Published var position: SIMD3<Float> = SIMD3<Float>(0, 0, 0)
-//    @Published var scale: SIMD3<Float> = SIMD3<Float>(0.001, 0.001, 0.001)
-    
+    @Published var scale: SIMD3<Float> = SIMD3<Float>(0.005, 0.005, 0.005)
+
     init(modelName: String) {
+        
         self.modelName = modelName
         
         self.image = UIImage(named: modelName)!
@@ -33,15 +34,16 @@ class Model{
                 modelEntity in
                 // get out modelEntity
                 modelEntity.transform.translation = self.position
-                modelEntity.scale = self.reletiveScale(relativeTo: try! Experience.loadCat())
+                modelEntity.scale = self.scale
+//                modelEntity.scale = self.reletiveScale(relativeTo: try! Experience.loadCat())
                 self.modelEntity = modelEntity
                 
                 print("DEBUG : successfully loaded modelEnity for modelName :\(self.modelName)")
             })
         
     }
-    
-    func reletiveScale(relativeTo referenceEntity: Entity?) -> SIMD3<Float> {
-        return 0.25 * (referenceEntity?.scale ?? SIMD3<Float>(0.001, 0.001, 0.001))
-    }
+
+//    func reletiveScale(relativeTo referenceEntity: Entity?) -> SIMD3<Float> {
+//        return 0.25 * (referenceEntity?.scale ?? SIMD3<Float>(0.001, 0.001, 0.001))
+//    }
 }

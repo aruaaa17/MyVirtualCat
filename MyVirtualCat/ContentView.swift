@@ -47,7 +47,7 @@ struct ContentView : View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            ARViewContainer(modelConfirmForPlacement: self.$modelConfirmedForPlacement)
+            ARViewContainer(modelConfirmForPlacement: self.$modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
             
             if self.isPlacementEnable {
                 PlacementButtonView(isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel, modelConfirmForPlacement: self.$modelConfirmedForPlacement)
