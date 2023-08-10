@@ -21,11 +21,12 @@
 		837D404F2A826B9200D92058 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 837D404E2A826B9200D92058 /* FocusEntity */; };
 		837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 837D40502A82F3BE00D92058 /* Experience.rcproject */; };
 		837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40522A82F58D00D92058 /* ModelPicker.swift */; };
-		837D40552A82F72F00D92058 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40542A82F72F00D92058 /* CustomARView.swift */; };
+		837D40552A82F72F00D92058 /* CustomARView+FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D40542A82F72F00D92058 /* CustomARView+FocusSquare.swift */; };
 		837D40572A8324A300D92058 /* ball.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 837D40562A8324A300D92058 /* ball.usdz */; };
 		8384AAB82A84B14F00EAC252 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AAB72A84B14F00EAC252 /* MyViewController.swift */; };
 		8384AABA2A84B2B900EAC252 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AAB92A84B2B900EAC252 /* MyView.swift */; };
 		8384AABC2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AABB2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift */; };
+		8384AABE2A84BD7500EAC252 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AABD2A84BD7500EAC252 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,11 +45,12 @@
 		837D404B2A82699E00D92058 /* heart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = heart.usdz; sourceTree = "<group>"; };
 		837D40502A82F3BE00D92058 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		837D40522A82F58D00D92058 /* ModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPicker.swift; sourceTree = "<group>"; };
-		837D40542A82F72F00D92058 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		837D40542A82F72F00D92058 /* CustomARView+FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+FocusSquare.swift"; sourceTree = "<group>"; };
 		837D40562A8324A300D92058 /* ball.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ball.usdz; sourceTree = "<group>"; };
 		8384AAB72A84B14F00EAC252 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		8384AAB92A84B2B900EAC252 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		8384AABB2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		8384AABD2A84BD7500EAC252 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +92,13 @@
 				8384AAB72A84B14F00EAC252 /* MyViewController.swift */,
 				8384AABB2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift */,
 				832098252A70B65C0001718C /* ContentView.swift */,
-				837D40542A82F72F00D92058 /* CustomARView.swift */,
+				837D40542A82F72F00D92058 /* CustomARView+FocusSquare.swift */,
 				83400E2C2A73811900A90276 /* ARView+Extensions.swift */,
 				83400E2A2A7380D000A90276 /* Coordinator.swift */,
 				835B2C172A79CA5C006EC2E3 /* IconViewModel.swift */,
 				837D40472A8265ED00D92058 /* Model.swift */,
 				837D40522A82F58D00D92058 /* ModelPicker.swift */,
+				8384AABD2A84BD7500EAC252 /* Extensions.swift */,
 				832098292A70B65E0001718C /* Assets.xcassets */,
 				837D40422A80DF7900D92058 /* Models */,
 				8320982B2A70B65E0001718C /* Preview Content */,
@@ -201,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8384AABA2A84B2B900EAC252 /* MyView.swift in Sources */,
-				837D40552A82F72F00D92058 /* CustomARView.swift in Sources */,
+				837D40552A82F72F00D92058 /* CustomARView+FocusSquare.swift in Sources */,
 				835B2C182A79CA5C006EC2E3 /* IconViewModel.swift in Sources */,
 				832098262A70B65C0001718C /* ContentView.swift in Sources */,
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
@@ -213,6 +216,7 @@
 				837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */,
 				837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */,
 				837D40482A8265ED00D92058 /* Model.swift in Sources */,
+				8384AABE2A84BD7500EAC252 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

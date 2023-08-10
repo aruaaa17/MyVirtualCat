@@ -48,11 +48,12 @@ struct ContentView : View {
     
     var body: some View {
         VStack{
-            Button("MyViewController") {
+            Button("Health Bar") {
                 isPresented = true
             }
             .sheet(isPresented: $isPresented) {
                 MyView()
+                    
             }
             Spacer()
             ZStack(alignment: .bottom) {
