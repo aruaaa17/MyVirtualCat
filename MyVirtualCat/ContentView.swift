@@ -9,7 +9,6 @@ import ARKit
 import SwiftUI
 import RealityKit
 import AVFoundation
-import FocusEntity
 import Combine
 
 // view protocol
@@ -18,6 +17,8 @@ struct ContentView : View {
     @State private var isPlacementEnable = false
     @State private var selectedModel: Model?
     @State private var modelConfirmedForPlacement: Model?
+//    @State private var viewStatus: String = "SURFACE DETECTED"
+    @State var isPresented = false
     
     var models : [Model] = {
             let fileManager = FileManager.default
@@ -46,15 +47,24 @@ struct ContentView : View {
 //    var models:[String] = ["Heart","Fish","Ball"]
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            ARViewContainer(modelConfirmForPlacement: self.$modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
-            
-            if self.isPlacementEnable {
-                PlacementButtonView(isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel, modelConfirmForPlacement: self.$modelConfirmedForPlacement)
-//                test()
-            } else {
-                ModelPickerView(models: self.models, isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel)}
-            
+        VStack{
+            Button("MyViewController") {
+                isPresented = true
+            }
+            .sheet(isPresented: $isPresented) {
+                MyView()
+            }
+            Spacer()
+            ZStack(alignment: .bottom) {
+                ARViewContainer(modelConfirmForPlacement: self.$modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
+                
+                if self.isPlacementEnable {
+                    PlacementButtonView(isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel, modelConfirmForPlacement: self.$modelConfirmedForPlacement)
+                    //                test()
+                } else {
+                    ModelPickerView(models: self.models, isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel)}
+                
+            }
         }
     }
 }
@@ -64,9 +74,6 @@ struct ContentView : View {
 struct ARViewContainer: UIViewRepresentable {
     
     @Binding var modelConfirmForPlacement: Model?
-    
-//    let vm: IconViewModel
-
     
     // Set up basic ARView
     func makeUIView(context: Context) -> CustomARView {
