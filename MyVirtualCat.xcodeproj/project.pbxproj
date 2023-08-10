@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		832098242A70B65C0001718C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832098232A70B65C0001718C /* AppDelegate.swift */; };
-		832098262A70B65C0001718C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832098252A70B65C0001718C /* ContentView.swift */; };
+		832098262A70B65C0001718C /* ContentView+ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832098252A70B65C0001718C /* ContentView+ARViewContainer.swift */; };
 		8320982A2A70B65E0001718C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832098292A70B65E0001718C /* Assets.xcassets */; };
 		8320982D2A70B65E0001718C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8320982C2A70B65E0001718C /* Preview Assets.xcassets */; };
 		83400E182A71C29300A90276 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83400E172A71C29300A90276 /* SwiftUIView.swift */; };
@@ -27,12 +27,13 @@
 		8384AABA2A84B2B900EAC252 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AAB92A84B2B900EAC252 /* MyView.swift */; };
 		8384AABC2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AABB2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift */; };
 		8384AABE2A84BD7500EAC252 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AABD2A84BD7500EAC252 /* Extensions.swift */; };
+		8384AAC82A84EC0B00EAC252 /* CustomARView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AAC72A84EC0B00EAC252 /* CustomARView+Gestures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		832098202A70B65C0001718C /* MyVirtualCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVirtualCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832098232A70B65C0001718C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		832098252A70B65C0001718C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		832098252A70B65C0001718C /* ContentView+ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+ARViewContainer.swift"; sourceTree = "<group>"; };
 		832098292A70B65E0001718C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8320982C2A70B65E0001718C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83400E172A71C29300A90276 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		8384AAB92A84B2B900EAC252 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		8384AABB2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		8384AABD2A84BD7500EAC252 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8384AAC72A84EC0B00EAC252 /* CustomARView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Gestures.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,8 @@
 				8384AAB92A84B2B900EAC252 /* MyView.swift */,
 				8384AAB72A84B14F00EAC252 /* MyViewController.swift */,
 				8384AABB2A84B44C00EAC252 /* MyViewController+ARSCNViewDelegate.swift */,
-				832098252A70B65C0001718C /* ContentView.swift */,
+				832098252A70B65C0001718C /* ContentView+ARViewContainer.swift */,
+				8384AAC72A84EC0B00EAC252 /* CustomARView+Gestures.swift */,
 				837D40542A82F72F00D92058 /* CustomARView+FocusSquare.swift */,
 				83400E2C2A73811900A90276 /* ARView+Extensions.swift */,
 				83400E2A2A7380D000A90276 /* Coordinator.swift */,
@@ -206,7 +209,7 @@
 				8384AABA2A84B2B900EAC252 /* MyView.swift in Sources */,
 				837D40552A82F72F00D92058 /* CustomARView+FocusSquare.swift in Sources */,
 				835B2C182A79CA5C006EC2E3 /* IconViewModel.swift in Sources */,
-				832098262A70B65C0001718C /* ContentView.swift in Sources */,
+				832098262A70B65C0001718C /* ContentView+ARViewContainer.swift in Sources */,
 				832098242A70B65C0001718C /* AppDelegate.swift in Sources */,
 				83400E2B2A7380D000A90276 /* Coordinator.swift in Sources */,
 				83400E2D2A73811900A90276 /* ARView+Extensions.swift in Sources */,
@@ -216,6 +219,7 @@
 				837D40512A82F3BE00D92058 /* Experience.rcproject in Sources */,
 				837D40532A82F58D00D92058 /* ModelPicker.swift in Sources */,
 				837D40482A8265ED00D92058 /* Model.swift in Sources */,
+				8384AAC82A84EC0B00EAC252 /* CustomARView+Gestures.swift in Sources */,
 				8384AABE2A84BD7500EAC252 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

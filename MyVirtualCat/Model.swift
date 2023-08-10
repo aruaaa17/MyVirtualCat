@@ -35,6 +35,8 @@ class Model{
                 // get out modelEntity
                 modelEntity.transform.translation = self.position
                 modelEntity.scale = self.scale
+                let lightEntity = Lighting().light
+                modelEntity.components.set(lightEntity)
 //                modelEntity.scale = self.reletiveScale(relativeTo: try! Experience.loadCat())
                 self.modelEntity = modelEntity
                 
@@ -47,3 +49,4 @@ class Model{
 //        return 0.25 * (referenceEntity?.scale ?? SIMD3<Float>(0.001, 0.001, 0.001))
 //    }
 }
+
