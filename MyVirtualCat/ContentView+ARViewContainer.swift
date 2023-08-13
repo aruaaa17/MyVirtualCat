@@ -83,6 +83,7 @@ struct ARViewContainer: UIViewRepresentable {
         arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
         context.coordinator.arView = arView
         arView.addCoachingOverlay()
+        arView.enableObjectRemoval()
         
         return arView
 

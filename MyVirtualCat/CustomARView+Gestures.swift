@@ -12,13 +12,6 @@ import RealityKit
 
 extension CustomARView {
 
-    @objc func handleTap(recognizer: UIGestureRecognizer) {
-        let location = recognizer.location(in: self)
-
-        if let entity = self.entity(at: location) {
-            entity.removeFromParent()
-        }
-    }
 
     func enableObjectRemoval() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
@@ -28,5 +21,12 @@ extension CustomARView {
         self.addGestureRecognizer(tapGestureRecognizer)
     }
 
+    @objc func handleTap(recognizer: UIGestureRecognizer) {
+        let location = recognizer.location(in: self)
+        
+        if let entity = self.entity(at: location) {
+            entity.removeFromParent()
+        }
+    }
 
 }
