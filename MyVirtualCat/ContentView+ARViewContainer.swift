@@ -89,6 +89,7 @@ struct ARViewContainer: UIViewRepresentable {
 
     }
     
+    
     func updateUIView(_ uiView: CustomARView, context: Context) {
         if let model =
             self.modelConfirmForPlacement{

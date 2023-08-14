@@ -14,45 +14,36 @@ class Coordinator {
     
     var arView: ARView?
     var catAnchor: AnchorEntity?
-    let catEntity = try! Experience.loadCat()
+//    let catEntity = try! Experience.loadCat()
     
-    @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
         
-        guard let arView = arView else {
-            return
+        guard let touchInView = sender?.location(in: self.arView) else {
+          return
         }
-
-        let location = recognizer.location(in: arView)
-        let results = arView.raycast(from: location, allowing: .estimatedPlane, alignment: .horizontal)
         
-        if let result = results.first {
-            
+        if let result = arView?.raycast(from: touchInView,
+          allowing: .existingPlaneGeometry, alignment: .horizontal
+        ).first {
+            print(result.worldTransform)
             // Remove old cat model
             if let catAnchor = catAnchor {
-                arView.scene.removeAnchor(catAnchor)
+                arView?.scene.removeAnchor(catAnchor)
             }
-            
-           
             let anchor = AnchorEntity(raycastResult: result)
-            
             let catEntity = try! Experience.loadCat()
-                        anchor.addChild(catEntity)
-            // Add light to cat model
+            anchor.addChild(catEntity)
+            
             let lightEntity = Lighting().light
-            
             catEntity.components.set(lightEntity)
-            arView.scene.addAnchor(anchor)
-            arView.scene.anchors.append(catEntity)
             
-            // Save new cat model
+            arView?.scene.addAnchor(anchor)
+            arView?.scene.anchors.append(anchor)
+            
             catAnchor = anchor
-           
-            // Gen collision shapes
-            catEntity.generateCollisionShapes(recursive: true)
-            // Install gestures
-//            arView.installGestures([.all], for: catEntity as! any Entity & HasCollision))
             
         }
+        
     }
     
 }
