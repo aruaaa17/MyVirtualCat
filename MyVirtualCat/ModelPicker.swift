@@ -35,9 +35,6 @@ struct ModelPickerView: View {
                             .frame(width: 80, height: 80)
                             .aspectRatio(1/1,contentMode: .fill)
                             .background(Color.white)
-//                            .border(.black, width: vm.selectedIcon == self.models[index] ? 1.0: 0.0)
-//                            .background(Color.white)
-//                            .onTapGesture { vm.selectedIcon = self.models[index] }
                     })
                     .buttonStyle(PlainButtonStyle())
                     Spacer()

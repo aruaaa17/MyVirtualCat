@@ -43,12 +43,6 @@ struct ContentView : View {
             return availableModels
         }()
     
-    
-//    func test() -> some View {
-//        print(isPlacementEnable)
-//        return Text("test")
-//    }
-    
 //    var models:[String] = ["Heart","Fish","Ball"]
     
     var body: some View {
@@ -122,19 +116,6 @@ struct ARViewContainer: UIViewRepresentable {
         Coordinator()
     }
 }
-
-
-
-//extension CustomARView: FEDelegate{
-//    func toTrackingState() {
-//        print("tracking")
-//    }
-//
-//    func toInitializingState() {
-//        print("iniitializing")
-//    }
-//}
-
 
 
 struct PlacementButtonView: View {
