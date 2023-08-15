@@ -28,6 +28,8 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
 //        label.text = "🩷🩷🩷🩷🩷"
         label.textAlignment = .center
         
@@ -37,7 +39,11 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-        label.text = "\(currentNumberInLabel) 🩷"
+        if currentNumberInLabel == 0 {
+            label.text = "\(currentNumberInLabel) 🖤 \n \n \n Hey I'm still here! \n Play with me plzzzz 😿"
+        } else {
+            label.text = "\(currentNumberInLabel) 🩷 \n \n \n Did I mention that I love you so much 😽"
+        }
         view = label
 
         NSLayoutConstraint.activate([
@@ -48,7 +54,4 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
         ])
     }
     
-    func updateLable() {
-        label.text = "\(currentNumberInLabel) ❤️"
-    }
 }
