@@ -12,14 +12,24 @@ import ARKit
 import SwiftUI
 
 class MyViewController: UIViewController, UIGestureRecognizerDelegate {
+    var currentNumberInLabel: Int
+    
     
 //    var sceneView: VirtualObjectARView!
-
-    private var label: UILabel = {
+    init(number: Int) {
+        self.currentNumberInLabel = number
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .title3)
-        label.text = "🩷🩷🩷🩷🩷"
+//        label.text = "🩷🩷🩷🩷🩷"
         label.textAlignment = .center
         
         return label
@@ -28,7 +38,9 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-        view.addSubview(label)
+        label.text = "\(currentNumberInLabel) ❤️"
+        view = label
+//        view.addSubview(label)
 //        view.isOpaque = false
 //        view.window?.isOpaque = false
 //        
@@ -43,5 +55,9 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
             label.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
         ])
+    }
+    
+    func updateLable() {
+        label.text = "\(currentNumberInLabel) ❤️"
     }
 }

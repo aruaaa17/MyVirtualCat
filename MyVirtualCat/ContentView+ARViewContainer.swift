@@ -14,11 +14,16 @@ import Combine
 // view protocol
 struct ContentView : View {
     
+    @State private var currentNumber: Int
     @State private var isPlacementEnable = false
     @State private var selectedModel: Model?
     @State private var modelConfirmedForPlacement: Model?
 //    @State private var viewStatus: String = "SURFACE DETECTED"
     @State var isPresented = false
+    
+    init(currentNumber: Int) {
+        self.currentNumber = currentNumber
+    }
     
     var models : [Model] = {
             let fileManager = FileManager.default
@@ -52,7 +57,7 @@ struct ContentView : View {
                 isPresented = true
             }
             .sheet(isPresented: $isPresented) {
-                MyView()
+                MyView(currentNumber: self.$currentNumber)
                     
             }
             Spacer()
@@ -60,7 +65,7 @@ struct ContentView : View {
                 ARViewContainer(modelConfirmForPlacement: self.$modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
                 
                 if self.isPlacementEnable {
-                    PlacementButtonView(isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel, modelConfirmForPlacement: self.$modelConfirmedForPlacement)
+                    PlacementButtonView(currentNumber: self.$currentNumber, isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel, modelConfirmForPlacement: self.$modelConfirmedForPlacement)
                     //                test()
                 } else {
                     ModelPickerView(models: self.models, isPlacementEnable: self.$isPlacementEnable, selectedModel: self.$selectedModel)}
@@ -133,6 +138,7 @@ struct ARViewContainer: UIViewRepresentable {
 
 
 struct PlacementButtonView: View {
+    @Binding var currentNumber: Int
     @Binding var isPlacementEnable: Bool
     @Binding var selectedModel: Model?
     @Binding var modelConfirmForPlacement: Model?
@@ -156,6 +162,7 @@ struct PlacementButtonView: View {
             print("DEBUG : Cancel model placement confirmed")
             self.modelConfirmForPlacement = self.selectedModel
             self.resetPlacementParameters()
+            currentNumber += 1
             }){
                 Image(systemName: "checkmark")
                     .frame(width: 60, height: 60)
@@ -173,8 +180,11 @@ struct PlacementButtonView: View {
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
+    
+    @State private var currentNumber: Int
+    
     static var previews: some View {
-        ContentView()
+        ContentView(currentNumber: 0)
             .ignoresSafeArea()
     }
 }
