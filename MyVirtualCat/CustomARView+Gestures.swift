@@ -2,7 +2,7 @@
 //  CustomARView+Gestures.swift
 //  MyVirtualCat
 //
-//  Created by aRua Zhang on 8/10/23.
+//  Created by April (Huaiyu) Zhang on 8/10/23.
 //
 
 /// Pause to use

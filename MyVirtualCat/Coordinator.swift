@@ -2,7 +2,7 @@
 //  Coordinator.swift
 //  MyVirtualCat
 //
-//  Created by aRua Zhang on 7/27/23.
+//  Created by April (Huaiyu) Zhang on 7/27/23.
 //
 
 import Foundation

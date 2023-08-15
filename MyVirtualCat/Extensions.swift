@@ -3,7 +3,7 @@
 //  Source Code From Apple
 //  MyVirtualCat
 //
-//  Created by aRua Zhang on 8/9/23.
+//  Created by April (Huaiyu) Zhang on 8/9/23.
 //
 
 import Foundation

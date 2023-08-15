@@ -2,7 +2,7 @@
 //  SwiftUIView.swift
 //  MyVirtualCat
 //
-//  Created by aRua Zhang on 7/26/23.
+//  Created by April (Huaiyu) Zhang on 7/26/23.
 //
 
 import SwiftUI

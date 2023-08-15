@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  MyVirtualCat
 //
-//  Created by aRua Zhang on 7/25/23.
+//  Created by April (Huaiyu) Zhang on 7/25/23.
 //
 
 import ARKit

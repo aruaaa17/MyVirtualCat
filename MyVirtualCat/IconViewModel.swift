@@ -2,7 +2,7 @@
 //  IconViewModel.swift
 //  MyVirtualCat
 //
-//  Created by aRua Zhang on 8/1/23.
+//  Created by April (Huaiyu) Zhang on 8/1/23.
 //
 
 import Foundation
