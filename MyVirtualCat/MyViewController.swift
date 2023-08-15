@@ -32,6 +32,7 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
         label.lineBreakMode = .byWordWrapping
 //        label.text = "🩷🩷🩷🩷🩷"
         label.textAlignment = .center
+        label.textColor = .systemPink
         
         return label
     }()
@@ -41,8 +42,10 @@ class MyViewController: UIViewController, UIGestureRecognizerDelegate {
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         if currentNumberInLabel == 0 {
             label.text = "\(currentNumberInLabel) 🖤 \n \n \n Hey I'm still here! \n Play with me plzzzz 😿"
+        } else if currentNumberInLabel > 5 {
+            label.text = "\(currentNumberInLabel) 🩷 \n \n \n Did I mention that I love you so much 😻"
         } else {
-            label.text = "\(currentNumberInLabel) 🩷 \n \n \n Did I mention that I love you so much 😽"
+            label.text = "\(currentNumberInLabel) 🩵 \n \n \n I think you can love me more 😽"
         }
         view = label
 
