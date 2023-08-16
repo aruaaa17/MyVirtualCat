@@ -37,7 +37,6 @@ class Model{
                 modelEntity.scale = self.scale
                 let lightEntity = Lighting().light
                 modelEntity.components.set(lightEntity)
-//                modelEntity.scale = self.reletiveScale(relativeTo: try! Experience.loadCat())
                 self.modelEntity = modelEntity
                 
                 print("DEBUG : successfully loaded modelEnity for modelName :\(self.modelName)")
@@ -45,8 +44,5 @@ class Model{
         
     }
 
-//    func reletiveScale(relativeTo referenceEntity: Entity?) -> SIMD3<Float> {
-//        return 0.25 * (referenceEntity?.scale ?? SIMD3<Float>(0.001, 0.001, 0.001))
-//    }
 }
 
