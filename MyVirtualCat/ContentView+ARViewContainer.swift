@@ -127,7 +127,7 @@ struct PlacementButtonView: View {
         HStack{
         // cancel button
         Button(action: {
-            print("DEBUG : Cancel model placement cancel ")
+            print("DEBUG : Cancel - model placement cancel ")
             self.resetPlacementParameters()
             }){
                 Image(systemName: "xmark")
@@ -140,7 +140,7 @@ struct PlacementButtonView: View {
         
         //Confirm Button
         Button(action: {
-            print("DEBUG : Cancel model placement confirmed")
+            print("DEBUG : Confirm - model placement confirmed")
             self.modelConfirmForPlacement = self.selectedModel
             self.resetPlacementParameters()
             currentNumber += 1
