@@ -1,5 +1,5 @@
 # MyVirtualCat
-Ada Capstone Project - New Generation's Tamogatchi
+Ada Capstone Project - New Generation's Tamogatchi.
 An AR virtual cat mini-game ios app.
 
 ## Description
