@@ -4,6 +4,8 @@ Ada Capstone Project - New Generation's Tamogatchi
 ## Description
 An AR virtual cat mini-game ios app.
 
+## Presentation Slide
+[slide](https://www.canva.com/design/DAFr3ukWc1M/f-g3pJVDZKQLb7tBuVTQKQ/view?utm_content=DAFr3ukWc1M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Learning Resources
   - [Swift Language 5.9 ](https://docs.swift.org/swift-book/documentation/the-swift-programming-language)
